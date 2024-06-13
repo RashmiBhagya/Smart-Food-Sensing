@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Research</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .main-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .main-title span {
+            color: #007BFF;
+        }
+        .main-photo {
+            display: block;
+            max-width: 60%;
+            height: auto;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .paragraph {
+            text-align: justify;
+            margin: 20px 0;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .cta {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .cta:hover {
+            background-color: #0056b3;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(33% - 20px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-title {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+        .card p {
+            font-size: 0.9em;
+            color: #666;
+            padding: 0 10px 10px;
+        }
+        .image-container {
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 20%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">DETECTING <span> ARTIFICIALLY RIPENED BANANAS</span></h1>
+        <img src="../img/bananaModel.png" alt="Main Research Image" class="main-photo">
+        <p class="paragraph">
+            Data Collection Module: This crucial element involves a methodical strategy to collecting a wide-ranging and comprehensive dataset of banana photographs. Data gathering operations encompass a diverse strategy, utilizing multiple sources such as agricultural databases, web archives, and in-house photography sessions. The dataset is carefully selected to include both bananas that have ripened naturally and bananas that have been ripened using chemicals, in order to provide a thorough representation of ripening variables. Our primary focus is on obtaining photos in a wide range of environmental settings, including varying lighting scenarios, perspectives, and ripeness stages. By including such diversity, the dataset acts as a strong basis for training the deep learning model, allowing it to effectively adapt to real-world situations.<br><br>
+
+            The Preprocessing Module is essential for optimizing the performance of the model. Its main objective is to refine and standardize the input data for the deep learning model. This component involves a range of tasks focused on improving the quality and uniformity of banana photographs. Operations such as standardizing image sizes, normalizing pixel intensity ranges, and applying data augmentation techniques are used. Preprocessing, through the standardization of input data, improves the training of models, reduces biases, and boosts the model's capacity to extract pertinent characteristics from images. <br><br>
+
+            The Model Training Module is responsible for iteratively refining the parameters of the deep learning model at the heart of the system. Leveraging the sophisticated Xception architecture, training begins by putting preprocessed banana photos into the model. Through the repeated process of backpropagation, the model modifies its internal parameters to minimize prediction errors, progressively improving its capacity to discern between naturally and chemically ripened bananas. Extensive training on the curated dataset enables the model to understand subtle patterns and traits indicative of ripening processes, equipping it to make accurate predictions in real-world circumstances. <br><br>
+
+            Evaluation Module: This component acts as a vital checkpoint in analyzing the efficacy of the trained model. Utilizing validation datasets independent from the training data, the Evaluation Module measures multiple performance metrics including accuracy, precision, recall, and F1 score. These metrics provide insights into the model's ability in differentiating between ripening processes and its generalization capabilities. Through rigorous examination, any discrepancies or opportunities for improvement in the model's performance are recognized, directing additional iterations and advancements. <br><br>
+
+            Android Application Development Module: With the purpose of democratizing access to the created technology, the Android Application Development Module focuses on producing an intuitive and user-friendly mobile application.Designed to run on Android devices, the program enables users to quickly shoot photographs of bananas using their device cameras. Leveraging the learned deep learning model, the application delivers quick feedback on the freshness of bananas, showing whether they are naturally or chemically ripened. User interface design, seamless integration with device functionalities, and straightforward navigation are focused to increase user experience and accessibility.<br><br> 
+
+            User Interface (UI) Design Module: Within the world of Android application development, the UI Design Module acquires essential importance in designing an engaging and intuitive interface.User-centric design principles control the production of visually appealing layouts, clear instructions, and interactive elements. Emphasis is given on assuring ease of use and easy navigation, facilitating smooth engagement with the program. Clear visual signals, clear iconography, and concise language promote user comprehension and engagement, encouraging a pleasant user experience. <br><br>
+
+            Integration Module: The Integration Module orchestrates the seamless integration of diverse components inside the system, providing unified functionality and communication. This component comprises embedding the taught deep learning model into the Android application framework, providing real-time banana ripeness detection. Robust communication protocols and data exchange methods are built to facilitate smooth interaction between the application frontend and the backend model. Comprehensive testing and validation methods are done to assure compatibility, dependability, and stability across varied device contexts. <br><br>
+
+            Deployment Module: The final stage of the system lifecycle, the Deployment Module comprises making the developed Android application accessible to the intended audience. This comprises packaging the application for release through app stores such as Google Play, ensuring compliance with platform norms and standards. Continuous monitoring and updates are crucial to addressing customer feedback, correcting any issues, and implementing new features or enhancements.Feedback mechanisms, user interaction activities, and analytics technologies are employed to gather data and iterate on the application's performance over time, guaranteeing its continuing relevance and usefulness in addressing customer demands. <br><br>
+       </p>
+       <a href="APP.pdf" class="cta">Download More Details</a>
+       <h2 class="sub-title">Developing an Android App for Banana Quality Detection</h2>
+       <p class="paragraph">
+        In addition to model development, our methodology encompassed the creation of a user-friendly Android application to facilitate real-time banana inspection. Leveraging the trained model, the application seamlessly integrated banana artificial ripeness detection functionality, allowing users to capture banana images using their smartphones and receive immediate feedback on chemical status.<br><br>
+
+        User interface design and image processing techniques, among other program features and functionality, were carefully taken into account during the development process. We made sure the application interface was user-friendly and accessible to users with varying degrees of technical expertise by using iterative design and testing. Real-time analysis of banana photos was made possible by the integration of sophisticated image processing algorithms, giving consumers precise and useful information about the freshness and artificial chemical content of bananas.
+        
+       </p>
+        <div class="card-container">
+            <div class="card">
+                <img src="../img/Picture1.png" alt="Research Image 1">
+                <h2 class="card-title">Classification As Chemical</h2>
+                <p>Using advanced algorithms to detect artificially ripened bananas.</p>
+            </div>
+            <div class="card">
+                <img src="../img/Picture2.png" alt="Research Image 2">
+                <h2 class="card-title">Classification As Non-Chemical</h2>
+                <p>Using advanced algorithms to detect artificially ripened bananas.</p>
+            </div>
+            <div class="card">
+                <img src="../img/Picture2.png" alt="Research Image 2">
+                <h2 class="card-title">Classification As Non-Chemical</h2>
+                <p>Using advanced algorithms to detect artificially ripened bananas.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
